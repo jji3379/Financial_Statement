@@ -1,0 +1,6 @@
+@charset "utf-8"; /*한글을 이상한 문자열로 인식하지 않도록 방지*/
+
+	
+.sample{
+	background-color: cyan;
+}
