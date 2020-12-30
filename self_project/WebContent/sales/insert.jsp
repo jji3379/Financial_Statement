@@ -38,6 +38,7 @@
 		case "반지": dto.setCode("A10004");break;
 		}		
 	}
+	
 	//학살자
 	if(job.equals("학살자")){
 		dto.setJob(job);
@@ -48,10 +49,11 @@
 		case "허리": dto.setCode("B00004");break;
 		case "하의": dto.setCode("B00005");break;
 		case "발": dto.setCode("B00006");break;
-		case "귀걸이": break; //스크립트 알람 넣자
-		case "목걸이": break;
-		case "팔찌": break;
-		case "반지": break;
+		//없는 부위
+		case "귀걸이": dto.setCode("X"); break;
+		case "목걸이": dto.setCode("X");break;
+		case "팔찌": dto.setCode("X");break;
+		case "반지": ;dto.setCode("X");break;
 		}		
 	}
 	//타격대
@@ -64,6 +66,11 @@
 		case "허리": dto.setCode("B00104");break;
 		case "하의": dto.setCode("B00105");break;
 		case "발": dto.setCode("B00106");break;
+		//없는 부위
+		case "귀걸이": dto.setCode("X");break; 
+		case "목걸이": dto.setCode("X");break;
+		case "팔찌": dto.setCode("X");break;
+		case "반지": dto.setCode("X");break;
 		}		
 	}
 	//공격대
@@ -74,6 +81,13 @@
 		case "목걸이": dto.setCode("B10002");break;
 		case "팔찌": dto.setCode("B10003");break;
 		case "반지": dto.setCode("B10004");break;
+		//없는 부위
+		case "머리": dto.setCode("X");break;
+		case "상의": dto.setCode("X");break;
+		case "손": dto.setCode("X");break;
+		case "허리": dto.setCode("X");break;
+		case "하의": dto.setCode("X");break;
+		case "발": dto.setCode("X");break;
 		}		
 	}
 	//정찰대
@@ -86,6 +100,11 @@
 		case "허리": dto.setCode("C00004");break;
 		case "하의": dto.setCode("C00005");break;
 		case "발": dto.setCode("C00006");break;
+		//없는 부위
+		case "귀걸이": dto.setCode("X");break; 
+		case "목걸이": dto.setCode("X");break;
+		case "팔찌": dto.setCode("X");break;
+		case "반지": dto.setCode("X");break;
 		}		
 	}
 	//유격대
@@ -158,6 +177,7 @@
 		<script>
 			location.href="sales.jsp";
 		</script>
-	<%} %> 	
+	<%} %>
+	
 </body>
 </html>

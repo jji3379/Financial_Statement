@@ -242,7 +242,14 @@
 												color:white;	
 										<%}%>
 										">
-										<%=tmp.getCode() %>
+										<%if(tmp.getCode().equals("X")) {%>
+											<script>											
+												alert("해당 직군의 부위는 존재하지 않습니다.");
+												location.href="delete.jsp?num=<%=tmp.getNum()%>"
+											</script>
+										<%}else{ %>										
+										<%=tmp.getCode()%>
+										<%} %>
 										</td>
 									<!-- code 색 적용 END -->					
 									<td><%=tmp.getJob() %></td>
