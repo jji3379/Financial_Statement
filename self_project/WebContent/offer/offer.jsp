@@ -496,7 +496,6 @@
 								<td><a style="color:red" href="update.jsp?num=<%=tmp.getNum()%>">수정</a></td>				
 								<td><a style="color:red" href="delete.jsp?num=<%=tmp.getNum()%>">X</a></td>		
 							</tr>
-							
 						<%} %>
 					</tbody>
 					<!-- body END -->
